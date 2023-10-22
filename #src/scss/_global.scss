@@ -1,0 +1,123 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	background-color: white;
+	//  color: #000000;red
+}
+
+.wrapper {
+	//max-width: 1920px;
+	margin: 0 auto;
+	//overflow: hidden;
+	//min-height: 100vh;
+	//------------------------------------------------------------------//
+	//Sticky footer
+	//flex
+	//display: flex;
+	//flex-direction: column;
+
+	.main {
+		flex-grow: 1;
+	}
+
+	//grid
+
+	//display: grid;
+	//grid-template-rows: min-content 1fr min-content;
+}
+
+._container {
+	max-width: 1300px;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.overlay {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	//background: linear-gradient(45deg, #fead06, #c00def);
+	background-color: rgba(0, 0, 0, 0.2);
+	top: 0;
+}
+
+//._ibg {
+//  position: relative;
+//}
+//
+//._ibg img{
+//  position: absolute;
+//  width: 100%;
+//  height: 100%;
+//  left: 0;
+//  top: 0;
+//  z-index: -1;
+//  object-fit: cover;
+//}
+
+//@media (max-width: 1439.98px) {
+//    ._ibg img {
+//        object-fit: cover;
+//        object-position: right;
+//    }
+//}
+.visually-hidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	height: 1px;
+	width: 1px;
+}
+
+
+//   hpver на мобильных и десктопе
+@media (hover: hover) {
+//	Класс с hover
+	.accordion:hover {
+		$hover-color: #ccc;
+	}
+
+}
+@media (hover: none) {
+//	Класс с hover
+	.accordion:active {
+		$hover-color: #ccc;
+	}
+
+}
+
+//Ориентация смартфона
+//@media screen and (orientation:portrait) {}
+//@media screen and (orientation:landscape) {}
+
+//Vadim Makeev
+//.visually-hidden {
+//  position: absolute;
+//  width: 1px;
+//  height: 1px;
+//  margin: -1px;
+//  padding: 0;
+//  overflow: hidden;
+//  white-space: nowrap;
+//  border: 0;
+//  clip: rect(0 0 0 0);
+//  -webkit-clip-path: inset(100%);
+//  clip-path: inset(100%);
+//}
+
+//Light/Dark Color Scheme
+
+//@media (prefers-color-scheme: light) {
+//  :root {
+//    color: #213547;
+//    background-color: #ffffff;
+//  }
+//  a:hover {
+//    color: #747bff;
+//  }
+//  button {
+//    background-color: #f9f9f9;
+//  }

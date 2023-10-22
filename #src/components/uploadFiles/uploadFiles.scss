@@ -1,0 +1,116 @@
+.uploadCard {
+	margin-inline: auto;
+	margin-top: 5rem;
+	max-width: 600px;
+	border-radius: 6px;
+	background-color: #c4c4c4;
+	padding: 1rem;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+	> h3 {
+		margin: 1rem 0;
+	}
+}
+
+.btn {
+	color: #42b983;
+	position: relative;
+	border-radius: 99px;
+	border: 1px solid #42b983;
+	text-transform: uppercase;
+	padding: 0.5rem 1.5rem;
+	font-weight: 700;
+	transition: all 0.22s;
+	background: #fff;
+	cursor: pointer;
+	margin-right: 1rem;
+
+	:active {
+		box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
+	}
+
+	:hover {
+		cursor: pointer;
+		opacity: 0.8;
+	}
+}
+
+.primary {
+	background: #42b983;
+	color: #ffffff;
+}
+
+input[type='file'] {
+	display: none;
+}
+
+.preview {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0.5rem;
+}
+
+.preview-image {
+	position: relative;
+	margin-bottom: 0.5rem;
+	margin-right: 0.5rem;
+	overflow: hidden;
+
+	img {
+		width: 180px;
+		height: auto;
+	}
+}
+
+.preview-remove {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-weight: bold;
+	background-color: rgba(255, 255, 255, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	opacity: 0;
+	transition: opacity 0.22s;
+}
+
+.preview-image:hover .preview-remove {
+	opacity: 1;
+}
+
+.preview-info {
+	position: absolute;
+	bottom: -40px;
+	right: 0;
+	left: 0;
+	height: 25px;
+	font-size: 0.8rem;
+	background-color: rgba(255, 255, 255, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5px;
+	transition: bottom 0.22s;
+}
+
+.preview-image:hover .preview-info {
+	bottom: 8px;
+}
+
+.preview-image.removing {
+	transform: scale(0);
+	transition: transform 0.3s;
+}
+.preview-info-progress {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background: #42b983;
+	text-align: center;
+	transition: width 0.22s;
+}

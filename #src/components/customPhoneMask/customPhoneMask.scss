@@ -1,0 +1,19 @@
+//родительский блок
+main {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.phone_input {
+	font-size: 30px;
+	padding: 15px;
+	border: 1px solid #ccc;
+	min-width: 300px;
+	max-width: 400px;
+	width: 90%;
+}
+.phone_input:focus {
+	outline: none;
+}

@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+	head
+		block title
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		link(rel="stylesheet" type="text/css" href="css/main.css")
+	body
+		//- page wrapper
+		.wrapper
+			//- header
+			include ../../components/header/header.pug
+
+			//- pages
+			main.main
+				block content
+
+			//- footer
+			//- footer.footer
+			//-include ../modules/footer.pug
+
+
+		//- JS scripts
+
+
+
+
+
+		script(type="text/javascript", src="js/main.js")
